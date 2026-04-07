@@ -7,7 +7,7 @@ Core.Inventory.Current = 'tgiann-inventory'
 local TgiannInventory = exports['tgiann-inventory']
 
 Core.Inventory.addItem = function(src, item, count, metadata)
-    local success = TgiannInventory:AddItem(src, item, count, metadata)
+    local success = TgiannInventory:AddItem(src, item, count, nil, metadata)
     return success
 end
 
